@@ -1,0 +1,316 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    z-index: 1;
+}
+header h1{
+    display: inline-block;
+    font-size: 3.3rem;
+    color: #546130;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    
+}
+header h2{
+    color: #2D3B09;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.conteiner-banner picture{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
+
+.conteiner-cards{
+    width: 100%;
+    padding: 3rem 6rem;
+    display: flex;
+    justify-content:space-between;
+    background-color: #454545;
+
+}
+.conteiner-cards .conteiner-cards__item{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.conteiner-cards .conteiner-cards__item img{
+    width: 100%;
+    border: 10px solid #6F6F6F;
+}
+.conteiner-cards .conteiner-cards__item h3{
+    text-transform: uppercase;
+    font-size: 1.3rem
+}
+.conteiner-circle-text{
+    width: 100%;
+    padding: 2.5rem 5.5rem;
+    display: flex;
+    gap: 4rem;
+    background-color: #6F6F6F;
+    
+}
+.conteiner-circle-text .cards-image{
+    width: 420px;
+   height: 420px;
+    border-radius: 50%;
+    border: 20px solid #343434;
+    background-image: url("../assets/card-circulo.webp");
+    background-position: center;
+    background-size: cover;
+    flex: none;
+}
+
+.conteiner-circle-text .cards-text{
+    width: 55%;
+    color: white;
+    font-weight: 200;
+    flex: none;
+   
+}
+.conteiner-circle-text .cards-text h3{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.conteiner-circle-text .cards-text P{
+    font-size: 1rem;
+    margin-top: 1.3rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #454545;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+  @media screen and (max-width: 1100px) {
+    html{
+        font-size: 14px;
+    }
+    .conteiner-cards{
+        padding: 2rem 3rem;
+    }
+    .conteiner-circle-text{
+        padding: 2rem 2rem;
+        gap: 3rem;
+        align-items: center;
+    }
+    .conteiner-circle-text .cards-image{
+        width: 400px;
+        height: 400px;
+    }
+   
+  }
+  @media screen and (max-width: 1000px) {
+    .conteiner-circle-text .cards-image{
+        width: 370px;
+        height: 370px;
+    }
+
+  }
+
+  @media screen and (max-width: 900px) {
+    .conteiner-cards{
+        padding: 2rem 2rem;
+    }
+    .conteiner-cards .conteiner-cards__item{
+        width: 30%;
+    }
+
+    .conteiner-circle-text{
+        padding: 2rem 1rem!;
+        gap: 1.5rem;
+    }
+    .conteiner-circle-text .cards-image{
+        width: 320px;
+        height: 320px;
+    }
+   
+    .conteiner-circle-text .cards-text h3{
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        font-size: 1.8rem;
+    }
+    .conteiner-circle-text .cards-text P{
+        font-size: 1rem;
+        margin-top: 1.3rem;
+    }
+
+  }
+  @media screen and (max-width: 800px) {
+    .conteiner-circle-text{
+        padding: 1rem 1rem!;
+        gap: 1.5rem;
+    }
+    .conteiner-circle-text .cards-image{
+        width: 270px;
+        height: 270px;
+    }
+   
+    .conteiner-circle-text .cards-text {
+       flex: auto auto auto;
+    }
+ 
+
+  }
+  @media screen and (max-width: 660px) {
+    header{
+        padding: 1rem 2rem;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        background: #454545;
+    }
+
+   header h1{
+        font-size: 2.5rem;
+        margin-top: 0rem;
+        flex: none;
+        color: white;
+    }
+   header h2{
+        width: 60%;
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        
+    }
+
+    .conteiner-cards{
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+    .conteiner-cards .conteiner-cards__item{
+        width: 98%;
+    }
+    .conteiner-circle-text{
+        padding: 2rem 2rem;
+        flex-direction: column;
+        gap: 2rem;
+        
+    }
+    .conteiner-circle-text .cards-image{
+        width: 500px;
+        height: 500px;
+    }
+    .conteiner-circle-text .cards-text{
+        width: 100%;
+        text-align: center;
+
+    }
+    .conteiner-circle-text .cards-text h3{
+        font-size: 3.5rem;
+    }
+    .conteiner-circle-text .cards-text p{
+        font-size: 1.5rem;
+    }
+  }
+ 
+  @media screen and (max-width: 550px) {
+    header h1{
+        font-size: 2.4rem;
+    }
+    header h2{
+        font-size: 1.3rem;
+    }
+  
+  .conteiner-cards {
+    padding: 1rem;
+  }
+  .conteiner-circle-text .cards-image{
+    width: 420px;
+    height: 420px;
+}
+  .conteiner-circle-text .cards-text h3{
+    font-size: 2.5rem;
+}
+.conteiner-circle-text .cards-text p{
+    font-size: 1.3rem;
+}
+}
+  @media screen and (max-width: 500px) {
+    .conteiner-circle-text .cards-image{
+        width: 390px;
+        height: 390px;
+    }
+ 
+    .conteiner-circle-text .cards-text h3{
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    .conteiner-circle-text .cards-text h3{
+        font-size: 2.5rem;
+    }
+    .conteiner-circle-text .cards-text p{
+        font-size: 1rem;
+    }
+   
+    }
+    @media screen and (max-width: 470px) {
+        header h2{
+            width: 70%;
+        }
+    }
+    @media screen and (max-width: 420px) {
+        header{
+            height: 100px;
+        }
+       header h1{
+            font-size: 2rem;
+
+        }
+       header h2{
+            font-size: 1rem;
+            width: 60%;
+        }
+
+        .conteiner-circle-text{
+            gap: 1rem;
+        }
+        .conteiner-circle-text .cards-image{
+            width: 350px;
+            height: 350px;
+        }
+
+       }
+       @media screen and (max-width: 395px) {
+        header h2{
+            font-size: 1rem;
+            width: 80%;
+        }
+        .conteiner-circle-text .cards-image{
+            width: 270px;
+            height: 270px;
+        }
+
+        }
+
